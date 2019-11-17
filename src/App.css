@@ -1,22 +1,12 @@
 .App {
   text-align: center;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
+.dannyIMG{
+    width: 35vw;
+    height: 49vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+*{
+  box-sizing: border-box;
+  font-family: 'Press Start 2P';
 }

@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component }from 'react';
+import ChatManager from "./ChatManager/ChatManager";
+import "./App.css";
+import dannyGif from "./DannyImages/dannyDevitoTalkinghq.gif";
+import dannyIMG from "./DannyImages/dannyDevitoTalkinghq.jpg"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      dannyPic : null
+    }
+  }
+
+  toggleDanny = () => { //when the user selects something danny needs to speak and stop again
+    let updatedState = {...this.state, dannyPic: dannyGif};
+    this.setState(updatedState);
+
+    setTimeout( () => {
+      let updatedState = {...this.state, dannyPic: dannyIMG}
+      this.setState(updatedState);
+    }, 5900);
+  }
+
+  componentDidMount(){
+    this.toggleDanny()
+  }
+
+  render(){
+    return (
+      <div className="App">
+        <img className="dannyIMG" alt="dannyIMG" src={this.state.dannyPic}></img>
+        <ChatManager toggleDanny={this.toggleDanny}></ChatManager>
+      </div>
+    );
+  }
+  
 }
 
 export default App;

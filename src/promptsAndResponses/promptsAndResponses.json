@@ -1,0 +1,45 @@
+[
+    {
+        "id": 0,
+        "responses": ["like legit", "wtf", "how did you arrive here", "go back to start"],
+        "prompt": "this is the dev I have no clue how you got here",
+        "pointsTo": [1,1,1,1]
+    },
+    {
+        "id": 1,
+        "responses": ["yes", "no", "maybe", "yes but down here"],
+        "prompt": "Hello, it is I Danny DeVito, do you wish to date me?",
+        "pointsTo": [2,3,4,2]
+    },
+    {
+        "id": 2,
+        "responses": ["your eyes are beautiful", "I love your hair", "your smile is lovely", "you look so handsome"],
+        "prompt": "Im very glad",
+        "pointsTo": [6,6,5,5]
+    },
+    {
+        "id": 3,
+        "responses": ["yes", "no", "maybe", "so"],
+        "prompt": "why not OwO",
+        "pointsTo": [1,1,1,1]
+    },
+    {
+        "id": 4,
+        "responses": ["give me rum ham", "caress me gently", "poop the bed", "kiss me"],
+        "prompt": "what can I do to convince you <3",
+        "pointsTo": [6,1,6,1]
+    },
+    {
+        "id": 5,
+        "responses": ["I like you a lot", "(say nothing)", "I love you", "I want to be deep inside of you"],
+        "prompt": "thats very kind of you",
+        "pointsTo": [1,1,1,1]
+    },
+    {
+        "id": 6,
+        "responses": ["I like you a lot", "(say nothing)", "I love you", "I want to be deep inside of you"],
+        "prompt": "you know just what to say \n(◕ω◕✿)",
+        "pointsTo": [1,1,1,1]
+    }
+    
+]

@@ -1,0 +1,11 @@
+.Option{
+    text-align: center;
+    margin: 5px;
+    height: 25%;
+    width: 45%;
+    padding: 5px;
+    outline-color: black;
+    outline-width: 3px;
+    outline-style: solid; 
+    display: inline-table;
+}
