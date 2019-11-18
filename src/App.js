@@ -1,8 +1,8 @@
 import React, { Component }from 'react';
 import ChatManager from "./ChatManager/ChatManager";
 import "./App.css";
-import dannyGif from "./DannyImages/dannyDevitoTalkinghq.gif";
-import dannyIMG from "./DannyImages/dannyDevitoTalkinghq.jpg"
+import dannyGif from "./DannyImages/dannypixelated.gif";
+import dannyIMG from "./DannyImages/dannyMouthClosedEgg.gif"
 
 class App extends Component {
   constructor(){
@@ -19,7 +19,7 @@ class App extends Component {
     setTimeout( () => {
       let updatedState = {...this.state, dannyPic: dannyIMG}
       this.setState(updatedState);
-    }, 5900);
+    }, 3000);
   }
 
   componentDidMount(){
