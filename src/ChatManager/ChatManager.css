@@ -2,7 +2,10 @@
     width: 40vw;
     height: 49vh;
     background-color: salmon;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 25px 10px 25px;
-    
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

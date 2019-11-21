@@ -1,45 +1,124 @@
 [
     {
         "id": 0,
-        "responses": ["like legit", "wtf", "how did you arrive here", "go back to start"],
-        "prompt": "this is the dev I have no clue how you got here",
+        "responses": ["loser", "lose", "lose", "lose"],
+        "prompt": "u lose",
+        "depth": 0,
         "pointsTo": [1,1,1,1]
     },
     {
         "id": 1,
-        "responses": ["yes", "no", "maybe", "yes but down here"],
-        "prompt": "Hello, it is I Danny DeVito, do you wish to date me?",
-        "pointsTo": [2,3,4,2]
+        "responses": ["Hi Danny, how are you?", "Wow you're like really handsome", "(ignore him)", "hi Im username"],
+        "prompt": "Hello, it is I Danny DeVito",
+        "depth": 1,
+        "pointsTo": [2,13]
     },
     {
         "id": 2,
-        "responses": ["your eyes are beautiful", "I love your hair", "your smile is lovely", "you look so handsome"],
-        "prompt": "Im very glad",
-        "pointsTo": [6,6,5,5]
+        "responses": ["but you're so beautiful", "how long have you been single for", "I think I can change that ;)", "why do you think you're single"],
+        "prompt": "I'm very good, but unfortunately recently single",
+        "depth": 2,
+        "pointsTo": [3,null,5]
     },
     {
         "id": 3,
-        "responses": ["yes", "no", "maybe", "so"],
-        "prompt": "why not OwO",
-        "pointsTo": [1,1,1,1]
+        "responses": ["I'm a one woman man", "just the pretty ones", "Danny I.. -I think I love you", "I can't help it around you :)"],
+        "prompt": "I bet you say that to all the girls \n*bats eyes*\n^.^",
+        "depth": 3,
+        "pointsTo": [4]
     },
     {
         "id": 4,
-        "responses": ["give me rum ham", "caress me gently", "poop the bed", "kiss me"],
-        "prompt": "what can I do to convince you <3",
-        "pointsTo": [6,1,6,1]
+        "responses": ["I'm here to change that", "it is true, you are very handsome", "I think I can make an exception", "most handsome? I thought I was."],
+        "prompt": "unfortunately for you I'm not a woman. Just America's most handsome bachelor",
+        "depth": 4,
+        "pointsTo": [5]
     },
     {
         "id": 5,
-        "responses": ["I like you a lot", "(say nothing)", "I love you", "I want to be deep inside of you"],
-        "prompt": "thats very kind of you",
-        "pointsTo": [1,1,1,1]
+        "responses": ["I like you a lot, I didn't mean to mess this up", "(say nothing)", "I'm sorry you feel that way", "I'm sorry I gave off the wrong impression, I am interested in just you"],
+        "prompt": "no, you're not really my type. Too flirty.",
+        "depth": 5,
+        "pointsTo": [6]
     },
     {
         "id": 6,
-        "responses": ["I like you a lot", "(say nothing)", "I love you", "I want to be deep inside of you"],
-        "prompt": "you know just what to say \n(◕ω◕✿)",
-        "pointsTo": [1,1,1,1]
+        "responses": ["so tell me about yourself", "(say nothing)", "I love you", "I want to be deep inside of you"],
+        "prompt": "um.. -ok, I suppose we can keep chatting, but be more respectful",
+        "depth": 6,
+        "pointsTo": [7,0,0,0]
+    },
+    {
+        "id": 7,
+        "responses": ["don't you play frank on it's always sunny?", "don't you appear on broadway?", "do I know you from anything?", "Oh I'm a huge fan of your work"],
+        "prompt": "well as you know, I'm America's most handsome bachelor, but I'm also an actor",
+        "depth": 7,
+        "pointsTo": [8]
+    },
+    {
+        "id": 8,
+        "responses": ["thats awesome", "thats incredible", "can you show me a little something?", "Oh I'm a huge fan of your work"],
+        "prompt": "yes, I do",
+        "depth": 8,
+        "pointsTo": [9,9]
+    },
+    {
+        "id": 9,
+        "responses": ["I love what I do too", "I love what you do too", "well thats great", "So what do you think is next for you?"],
+        "prompt": "yeah it's pretty great. I really love what I do",
+        "depth": 9,
+        "pointsTo": [10,null,10,null]
+    },
+    {
+        "id": 10,
+        "responses": ["I play dating sims online because I'm a loser", "I'm a multimillionaire", "I have a job doing web development", "I'm a professional bass fisherman"],
+        "prompt": "what is it that you do?",
+        "depth": 10,
+        "pointsTo": [11]
+    },
+    {
+        "id": 11,
+        "responses": ["I try my best. Danny I think you're beautiful.", "Thank you!", "(say nothing)", "Do you think you could ever be with someone like me?"],
+        "prompt": "well at the very least least you're honest",
+        "depth": 11,
+        "pointsTo": [12,null, null, 12]
+    },
+    {
+        "id": 12,
+        "responses": ["win", "win", "win", "win"],
+        "prompt": "win",
+        "depth": 12,
+        "pointsTo": [1]
+    },
+    {
+        "id": 13,
+        "responses": ["but you're so beautiful", "how long have you been single for", "I think I can change that ;)", "why do you think you're single"],
+        "prompt": "Thanks I appreciate the compliment. I've recently become single, so its been a little rough",
+        "depth": 3,
+        "pointsTo": [4,14]
+    },
+    {
+        "id": 14,
+        "responses": ["I have never been in a relationship because I spend all day playing dating sims", "did you leave or did she", "what happened?", "I'm sorry"],
+        "prompt": "Oh just over four months now, how about you?",
+        "depth": 4,
+        "pointsTo": [11,15,15,15]
+    },
+    {
+        "id": 15,
+        "responses": ["oh, I'm so sorry", "That must have been hard for you", "(say nothing)", "getting cheated on is rough"],
+        "prompt": "yeah I find out this guy this guy has been banging my whooore wife",
+        "depth": 5,
+        "pointsTo": [16,16,16,16]
+    },
+    {
+        "id": 16,
+        "responses": ["oh, I'm so sorry", "That must have been hard for you", "(say nothing)", "getting cheated on is rough"],
+        "prompt": "nah its fine, I just plugged up the wound in my heart with garbage",
+        "depth": 6,
+        "pointsTo": []
     }
+    
+
     
 ]

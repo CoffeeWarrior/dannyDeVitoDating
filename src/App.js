@@ -12,19 +12,18 @@ class App extends Component {
     }
   }
 
-  toggleDanny = () => { //when the user selects something danny needs to speak and stop again
+  toggleDanny = (time) => { //when the user selects something danny needs to speak and stop again
     let updatedState = {...this.state, dannyPic: dannyGif};
     this.setState(updatedState);
+
+    console.log(`[app.js toggleDanny] time: ${time}`)
 
     setTimeout( () => {
       let updatedState = {...this.state, dannyPic: dannyIMG}
       this.setState(updatedState);
-    }, 3000);
+    }, time);
   }
 
-  componentDidMount(){
-    this.toggleDanny()
-  }
 
   render(){
     return (
